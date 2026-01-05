@@ -255,3 +255,73 @@ h1 span { color: #7c5cff; }
   background-position: center;
   background-repeat: no-repeat;
 }
+.contact-item i {
+  margin-right: 8px;
+  color: #611313;
+}
+/* ===== Contact platform colors ===== */
+
+/* WhatsApp */
+.contact-item.whatsapp i,
+.contact-item.whatsapp:hover {
+  color: #25D366;
+}
+.contact-item.whatsapp:hover {
+  box-shadow: 0 0 30px rgba(37, 211, 102, 0.35);
+}
+
+/* Email */
+.contact-item.email i,
+.contact-item.email:hover {
+  color: #EA4335;
+}
+.contact-item.email:hover {
+  box-shadow: 0 0 30px rgba(234, 67, 53, 0.35);
+}
+
+/* Facebook */
+.contact-item.facebook i,
+.contact-item.facebook:hover {
+  color: #1877F2;
+}
+.contact-item.facebook:hover {
+  box-shadow: 0 0 30px rgba(24, 119, 242, 0.35);
+}
+
+/* Instagram */
+.contact-item.instagram i,
+.contact-item.instagram:hover {
+  color: #E1306C;
+}
+.contact-item.instagram:hover {
+  box-shadow: 0 0 30px rgba(225, 48, 108, 0.35);
+}
+
+/* TikTok */
+.contact-item.tiktok i,
+.contact-item.tiktok:hover {
+  color: #69C9D0;
+}
+.contact-item.tiktok:hover {
+  box-shadow: 0 0 30px rgba(105, 201, 208, 0.35);
+}
+
+/* Smooth hover */
+.contact-item {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.contact-item:hover {
+  transform: translateY(-4px);
+}
+/* WhatsApp button override */
+.contact-item.whatsapp .btn.primary {
+  background-color: #25D366; /* WhatsApp green */
+  color: #0b0b10;
+  border-color: #25D366;
+}
+
+.contact-item.whatsapp .btn.primary:hover {
+  filter: brightness(1.05);
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.6);
+}
+
